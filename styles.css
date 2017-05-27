@@ -1,0 +1,428 @@
+/* @author : Bhushan Jain*/
+/* @andrewId : bhushanj@andrew.cmu.edu*/
+/* Description : Stylesheet created for fulfilment of HW2 requirements : google Fonts imported*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Questrial');
+
+* {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav li {
+    float: left;
+}
+
+nav a:link, a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(6, 147, 255) !important;
+
+}
+
+header {
+    color: rgb(255, 255, 255);
+    padding: 62.5%; /* 10px */
+    text-align: center;
+    width: 100%;
+
+    background-color: rgb(0, 0, 0) !important;
+}
+
+header,
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;;
+    flex-basis: 100%;
+}
+
+footer {
+
+    order: 4;
+}
+
+header {
+    order: 1;
+}
+
+aside {
+    background-color: rgb(255, 255, 255);
+}
+
+section,
+header,
+footer,
+aside {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+}
+
+.required {
+    color: rgb(255, 0, 0);
+}
+
+input[type="submit"] {
+    background-color: rgb(6, 147, 255);
+    color: white;
+    padding: 0.5em;
+
+}
+
+input[type="reset"] {
+    background-color: rgb(6, 147, 255);
+    color: white;
+    padding: 0.5em;
+
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    /*margin-top: 10px;*/
+    padding-top: 1.25em;
+
+}
+
+#section-favoritegenres, #section-about {
+    width: 100%;
+}
+
+#section-quoteoftheday {
+    width: 100%;
+}
+
+blockquote {
+    font-style: italic;
+    word-spacing: 0.0625em;
+}
+
+main a:link, main a:visited {
+    color: rgb(6, 147, 255);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border: 0.0625em solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+thead {
+    background: linear-gradient(180deg, rgb(134, 193, 239), rgb(134, 193, 239));
+    text-align: left;
+
+}
+
+tr, td, th {
+    border: 0.0625em solid rgb(0, 0, 0);
+    padding: 0.625em 0.3125em;
+}
+
+thead th {
+    color: rgb(0, 0, 0);
+}
+
+tbody td:nth-of-type(1), tbody td:nth-of-type(2) {
+    width: 18.75em;
+    text-align: left;
+}
+
+tbody td:nth-of-type(3), tbody td:nth-of-type(4) {
+    width: 12.50em;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(205, 233, 255);
+}
+
+section ul {
+    list-style-position: inside;
+    text-indent: 0.3125em;
+}
+
+fieldset {
+    border: 0.0625em solid rgb(153, 153, 153);
+    border-radius: 1em / 1em
+}
+
+fieldset:not(div) > input {
+    background-color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    border-radius: 0.625em;
+    padding: 0.3125em 0.625em;
+}
+
+/*floater flex box for aligning elements*/
+
+@media screen and (min-width: 960px) {
+    nav ul {
+        margin-left: 18%;
+    }
+
+    nav li {
+        flex-direction: row;
+        position: relative;
+        text-align: center;
+
+        margin-right: 0%;
+        margin-left: 0%;
+        padding-right: 3%;
+        flex-wrap: wrap;
+        flex-flow: row;
+    }
+
+    main {
+        background-color: rgb(255, 255, 0);
+    }
+
+    body {
+        background-color: rgb(239, 239, 239);
+    }
+
+    nav {
+        background-color: rgb(6, 147, 255);
+    }
+
+    main {
+        margin-left: 14%;
+        margin-right: 10%;
+        overflow: auto;
+        width: 960px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row;
+        align-content: flex-end;
+    }
+
+    img {
+        width: 35%;
+        height: auto;
+        float: right;
+        align-self: flex-start;
+    }
+
+    .reading-dog {
+        float: left;
+        width: 11.875em;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    nav li {
+        text-align: right;
+    }
+
+    .reading-dog {
+
+        background-image: url("reading_dog.png");
+        position: relative;
+        height: auto;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+    }
+
+    #section-quoteoftheday {
+        margin-top: 3%;
+        height: auto;
+        align-self: flex-start;
+        margin-bottom: 20%;
+        text-align: left;
+    }
+
+    #section-quoteoftheday p {
+
+        text-align: right;
+    }
+
+    #section-quoteoftheday blockquote p {
+
+        text-align: left;
+        line-height: 1.8em;
+    }
+
+    #section-whatreading {
+        align-self: flex-start;
+        float: left;
+        height: auto;
+        max-width: 58%;
+        margin-right: 5%;
+
+    }
+
+    #section-favoritegenres {
+
+        max-width: 98%;
+        height: auto;
+        align-self: flex-end;
+        margin-bottom: 30%;
+
+    }
+
+    header, footer {
+        padding: 0.5em;
+        width: 100%;
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    #section-quoteoftheday p {
+
+        text-align: right;
+    }
+
+    #section-quoteoftheday blockquote p {
+
+        text-align: left;
+        line-height: 1.8em;
+    }
+
+    section,
+    aside {
+        flex-basis: 100%;
+    }
+
+    section {
+        order: 2;
+    }
+
+    section {
+        font-family: Verdana, serif;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav ul {
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+    nav li {
+        list-style-type: none;
+        padding: 0.625em;
+        line-height: 0%;
+        display: block;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+    aside {
+        order: 3;
+    }
+
+    nav {
+        background-color: rgb(6, 147, 255);
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    .reading-dog {
+
+        background-image: url("reading_dog.png");
+        position: relative;
+        width: calc(100% - 6.25em);
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    table {
+        border: 0.0625em solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        margin-right: auto;
+        width: calc(100% - 6.25em);
+
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    tbody td:nth-of-type(1), tbody td:nth-of-type(2) {
+        width: 18.75em;
+        text-align: left;
+    }
+
+    tbody td:nth-of-type(3), tbody td:nth-of-type(4) {
+        width: 12.50em;
+        text-align: center;
+    }
+
+    tbody td:nth-of-type(3) {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    nav li,
+    ul li {
+        float: none;
+    }
+}
